@@ -1,0 +1,66 @@
+# =========================
+# Dependencies
+# =========================
+node_modules/
+/.pnp
+.pnp.js
+
+# =========================
+# Logs
+# =========================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# =========================
+# Build & Production
+# =========================
+# React / Create React App / Vite
+build/
+dist/
+/out
+
+# Next.js (if applicable)
+.next/
+
+# Node.js backend build outputs (e.g., compiled TypeScript)
+lib/
+
+# Testing
+coverage/
+
+# =========================
+# Editor & OS Specific
+# =========================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+
+# =========================
+# Misc
+# =========================
+.vercel
+.eslintcache
+*.tsbuildinfo
