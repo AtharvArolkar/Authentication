@@ -85,8 +85,8 @@ backend/
 ## 🛡️ Security Features
 
 ### Token Security
-- **Access Tokens**: Short-lived (1 minute) for API access
-- **Refresh Tokens**: Long-lived (3 minutes) stored in database
+- **Access Tokens**: Short-lived (1 day) for API access
+- **Refresh Tokens**: Long-lived (5 days) stored in database
 - **HttpOnly Cookies**: Prevent XSS attacks
 - **Secure Flag**: HTTPS-only in production
 - **SameSite**: Strict CSRF protection
@@ -121,17 +121,17 @@ CREATE TABLE users (
 PORT=5000
 
 # Database Configuration
-DB_HOST=localhost
-DB_PORT=5432
-DB_USER=postgres
-DB_PASSWORD=root
-DB_NAME=pern_auth
+DB_HOST=
+DB_PORT=
+DB_USER=
+DB_PASSWORD=
+DB_NAME=
 
 # JWT Configuration
 ACCESS_TOKEN_JWT_SECRET=your_access_token_secret
-ACCESS_TOKEN_JWT_EXPIRY=60000
+ACCESS_TOKEN_JWT_EXPIRY=1d
 REFRESH_TOKEN_JWT_SECRET=your_refresh_token_secret
-REFRESH_TOKEN_JWT_EXPIRY=180000
+REFRESH_TOKEN_JWT_EXPIRY=5d
 
 # Client Configuration
 CLIENT_URL=http://localhost:5173
